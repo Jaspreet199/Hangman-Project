@@ -7,21 +7,20 @@ function KeyButton(key, blanky) {
     this.element.innerText = this.key;
 
     this.element.onclick = function () {
-        this.blanky.updateText(this.key);
+        const numOfMatches = this.blanky.updateText(this.key);
         this.element.disabled = true;
 
-        if (game.lifeSpan.life > 0) {
+        if (numOfMatches > 0) {
+            game.scoreBoard.addScore(numOfMatches);
+
+        } else {
             game.lifeSpan.decrement(1);
         }
-        else {
-            document.write = "Game over! and you won"
-            const name = prompt("please enter your name");
-            const k = name + ", your score is " + game.scoreBoard.score;
-            alert(k)
-        }
+
+        game.won();
+        game.over();
+
     }.bind(this);
-
-
 
     this.getElement = function () {
         return this.element;

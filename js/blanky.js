@@ -10,7 +10,7 @@ function Blanky(word) {
 
 
     this.updateText = function (input) {
-        let is
+        let numOfMatches = 0;
         const positions = this.getPositions(input);
         let txt = "";
         for (let i = 0; i < this.word.length; i++) {
@@ -19,18 +19,16 @@ function Blanky(word) {
             if (positions.includes(i)) {
                 txt += input;
                 this.list[i] = input;
+
+                numOfMatches++;
             }
             else {
                 txt += this.list[i];
             }
         }
         this.element.innerText = txt;
-        if (!this.list.includes("_")) {
-            document.write = "Game over! and you won"
-            const name = prompt("please enter your name");
-            const k = name + ", your score is " + game.scoreBoard.score;
-            alert(k)
-        }
+
+        return numOfMatches;
     }
     this.getPositions = function (input) {
         const positons = [];
@@ -42,12 +40,17 @@ function Blanky(word) {
         }
         return positons;
     }
-    this.resolve = function () {
-        // Call this function when game is finished.
-    }
-    this.provideHint = function () {
-    }
+
     this.getElement = function () {
         return this.element;
+    }
+
+    this.isComplete = function () {
+        let complete = false;
+        if (!this.list.includes("_")) {
+            complete = true;
+        }
+
+        return complete;
     }
 }

@@ -13,10 +13,8 @@ function LifeSpan() {
 
     this.decrement = function (n) {
         this.life -= n;
+        this.element.innerText = Life_TEXT + this.life;
     }
-
-
-    this.element.innerText = Life_TEXT + this.life;
 }
 
 //fix life concept

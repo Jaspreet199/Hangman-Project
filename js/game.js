@@ -5,6 +5,7 @@ function Game() {
 
         this.lifeSpan = new LifeSpan();
         this.screen = new Screen();
+        this.overScreen = new OverScreen();
         this.picker = new WordPicker();
 
         const dict = this.picker.next();
@@ -20,6 +21,21 @@ function Game() {
         this.hintButton = new HintButton(dict.def);
 
         this.screen.show();
+    }
+
+
+    this.won = function () {
+        if (this.blanky.isComplete() === true) {
+            const name = prompt("please enter your name");
+            this.overScreen.show(name, this.scoreBoard.score, "WON");
+        }
+    }
+
+    this.over = function () {
+        if (this.lifeSpan.life === -1) {
+            const name = prompt("please enter your name");
+            this.overScreen.show(name, this.scoreBoard.score, "LOST");
+        }
     }
 }
 

@@ -15,7 +15,7 @@ const data = `[{
     "def": " something that establishes or serves as a pattern"
 },
 {
-    "word": "pseudo-code",
+    "word": "pseudocode",
     "def": " is an informal high-level description in common English  of an algorithm  computer program. It uses the structural conventions of a normal programming language, but is intended for human reading rather than machine reading."
 },
 {
@@ -23,7 +23,7 @@ const data = `[{
     "def": " (intelligence)(AI), sometimes called machine intelligence, is intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans and other animals. In computer science AI research is defined as the study of 'intelligent agents': any device that perceives its environment and takes actions that  maximize its chance of successfully achieving its goals. Colloquially, the term 'artificial intelligence' is applied  when a machine mimics 'cognitive' functions that humans associate with other human minds, such as 'learning'  and 'problem solving'."
 },
 {
-    "word": "flow-chart",
+    "word": "flowchart",
     "def": " a diagram of an algorithm with arrows, like pseudocode but with drawings, which shows visually how something will work"
 },
 {
@@ -287,7 +287,7 @@ const data = `[{
     "def": " is a collection of information organized in such a way that a computer program can quickly select desired pieces of data. You can think of a traditional database as an electronic filing system, organized by fields, records, and files. "
 },
 {
-    "word": "run-time",
+    "word": "runtime",
     "def": ""
 },
 {
