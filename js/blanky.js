@@ -1,4 +1,7 @@
-
+/**
+ * A list of blanks that can be updated with inputs.
+ * @param {*} word - An english word which needs to be converted to blanks
+ */
 function Blanky(word) {
     this.word = word;
     this.element = document.createElement("p");
@@ -10,6 +13,10 @@ function Blanky(word) {
     }
 
 
+    /**
+     * Updates the blanks with input character if it matches
+     * @param input - A single character that is expected to be part of the original word
+     */
     this.updateText = function (input) {
         let numOfMatches = 0;
         const positions = this.getPositions(input);
