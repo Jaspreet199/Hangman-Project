@@ -2,6 +2,7 @@
 function Blanky(word) {
     this.word = word;
     this.element = document.createElement("p");
+    this.element.classList.add("blanky")
 
     this.list = []
     for (let j = 0; j < this.word.length; j++) {

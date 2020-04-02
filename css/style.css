@@ -1,35 +1,39 @@
-.RestartButton {  
+.HelpButton {  
   
     height: 150px;
-    display: inline-block;
+    display: block;
     font-size: 3rem;
     font-weight: bold;
     width: 300px;
-    color:red;
- 
-    left:80px; 
-    top:20px;
+    color: red;
+    left: 80px;
+    top: 20px;
+    margin: auto;
+    margin-top: 20px;
     
   
 }
+
 .KeyButton{
     height: 90px;
     display: inline-block;
     font-size: 3rem;
     font-weight: bold;
-    width: 50px;
-    color : purple
-    
-
+    width: 90px;
+    color : purple;
+    transition: transform 0.2s ease-in-out,
+                box-shadow 0.2s ease-in-out;
 }
-p{
-    z-index: 99;
+
+.KeyButton:hover {
+    transform: translateX(3px) translateY(-3px);
+}
+
+.blanky{
     height: 150px;
-    display: inline-block;
     font-size: 3rem;
     font-weight: bold;
-    width: 300px;
-
+    text-align: center;
 }
 .scoreboard {
     z-index: 99;
@@ -56,7 +60,7 @@ p{
     font-size: 3rem;
     top: 0%;
     right:0%;
-  
+    float: right;
     font-weight: bold;
     width: 300px;
    
@@ -66,4 +70,28 @@ p{
 #container {
     height: 100vh;
     width: 100vw;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.keyboard .row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2%;
+}
+
+.keyboard .top {
+    width: 100%;
+}
+
+.keyboard .middle {
+    width: 80%;
+}
+
+.keyboard .bottom {
+    width: 60%;
 }

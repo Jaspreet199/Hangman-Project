@@ -4,7 +4,7 @@ function RestartButton() {
 
     this.element = document.createElement("button");
     this.element.innerText = RESTART_TEXT;
-    this.element.classList.add("RestartButton");
+    this.element.classList.add("HelpButton");
 
     this.element.onclick = function () {
         game.setup();

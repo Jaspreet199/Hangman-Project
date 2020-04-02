@@ -9,12 +9,11 @@ function Screen() {
 
         this.screen.append(game.lifeSpan.getElement());
 
-        this.screen.append(game.keyBoard.getElement());
-
-
         this.screen.append(game.blanky.getElement());
-        this.screen.append(game.restartButton.getElement());
+        this.screen.append(game.keyBoard.getElement());
         this.screen.append(game.hintButton.getElement());
+
+        this.screen.append(game.restartButton.getElement());
 
     }
 
