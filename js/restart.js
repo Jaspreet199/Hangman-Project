@@ -1,4 +1,7 @@
 const RESTART_TEXT = "Restart";
+/**
+ * button to start the game over again with new scores and lives.
+ */
 
 function RestartButton() {
 

@@ -1,3 +1,6 @@
+/**
+ * function to show  end screen with  result and greetings
+ */
 function OverScreen() {
     this.screen = document.getElementById("screen");
 

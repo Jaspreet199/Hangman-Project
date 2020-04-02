@@ -1,4 +1,7 @@
-
+/**
+ * 
+ * @param {*} blanky - a list of blanks
+ */
 function Keyboard(blanky) {
     this.element = document.createElement("div");
     this.element.classList.add("keyboard");
@@ -37,6 +40,11 @@ function Keyboard(blanky) {
         return this.element;
     }
 }
+/**
+ * 
+ * @param {*} i - number of key buttons
+ * @param {*} blanky - a list of blanks need to be created.
+ */
 
 function buildKey(i, blanky) {
     const alphabet = String.fromCharCode(65 + i).toLowerCase();

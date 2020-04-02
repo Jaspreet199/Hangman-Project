@@ -1,4 +1,8 @@
-
+/**
+ * 
+ * @param {*} key - single key of keyboards
+ * @param {*} blanky - blanks
+ */
 function KeyButton(key, blanky) {
     this.blanky = blanky;
     this.key = key;

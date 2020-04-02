@@ -1,4 +1,7 @@
 function WordPicker() {
+    /**
+     * @param {*} data - from where we get all the words to guess for users.
+     */
     this.words = JSON.parse(data);
     this.words.push({
         word: "Committee",
@@ -7,7 +10,7 @@ function WordPicker() {
 
     /**
      * 1) Select a random number
-     * 2) Give me object with word, definition at random
+     * 2) Give object with word, definition at random
      * 2) Remove the given word object from the words list.
      */
     this.next = function () {

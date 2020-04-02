@@ -1,4 +1,8 @@
 const HINT_TEXT = "Hint";
+/**
+ * function used to get the hint of puzzle.
+ * @param {*} definition - a definition of word which user suppose to guess
+ */
 
 function HintButton(definition) {
 

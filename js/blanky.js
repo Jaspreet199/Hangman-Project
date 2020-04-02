@@ -38,6 +38,10 @@ function Blanky(word) {
 
         return numOfMatches;
     }
+    /**
+     Updates the blanks with input character if it matches
+     * @param input - A single character that is expected to be part of the original word 
+     */
     this.getPositions = function (input) {
         const positons = [];
         for (let i = 0; i < this.word.length; i++) {

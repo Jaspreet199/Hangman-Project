@@ -1,3 +1,6 @@
+/**
+ * actual screen of game with scoreboard,lifeboard, keyboard,hint,restart button.
+ */
 function Screen() {
     this.screen = document.getElementById("screen");
 

@@ -1,5 +1,8 @@
 
 const SCORE_TEXT = "Score: ";
+/**
+ * function to create score button and how many scores to be increased every time
+ */
 
 function ScoreBoard() {
 

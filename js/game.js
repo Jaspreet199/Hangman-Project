@@ -22,7 +22,9 @@ function Game() {
 
         this.screen.show();
     }
-
+    /**
+     * function used to show if whole word guessed correctly.
+     */
 
     this.won = function () {
         if (this.blanky.isComplete() === true) {
@@ -30,7 +32,9 @@ function Game() {
             this.overScreen.show(name, this.scoreBoard.score, "WON");
         }
     }
-
+    /**
+     * function used if user used all of his lives without guessing the whole word.
+     */
     this.over = function () {
         if (this.lifeSpan.life === -1) {
             const name = prompt("please enter your name");
